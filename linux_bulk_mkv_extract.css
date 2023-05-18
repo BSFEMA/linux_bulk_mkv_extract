@@ -1,0 +1,68 @@
+.spinner {
+  animation-name: spin;
+  animation-duration: 15s;
+  animation-timing-function: linear;  /* linear, ease, ease-in, ease-out, ease-in-out */
+  animation-iteration-count: infinite;
+}
+@keyframes spin {
+  to { -gtk-icon-transform: rotate(1turn); }
+}
+
+/* Customizable section below */
+
+/* Main Object Types */
+window {}
+box {}
+treeview {}
+scrolledwindow {}
+viewport {}
+button {}
+combobox {}
+spinbutton {}
+checkbutton {}
+entry {}
+label {}
+filechooserbutton {}
+
+/* Individual Objects */
+box#box_Add_File_Name {}
+box#box_Audio {}
+box#box_Buttons {}
+box#box_Folder_Selecter {}
+box#box_IDs {}
+box#box_Main {}
+box#box_Options_and_Buttons {}
+box#box_Options {}
+box#box_Subtitles {}
+box#box_Title {}
+button#button_About {}
+button#button_Process {}
+button#button_Refresh {}
+button#button_Reset {}
+checkbox#button_Multi {}
+combobox#combo_Title_Keep_Entry {}
+combobox#combo_Title_Keep {}
+entry#entry_Audio_Languages {}
+entry#entry_Audio_Name {}
+entry#entry_Audio_Types {}
+entry#entry_Folder_path {}
+entry#entry_Subtitles_Languages {}
+entry#entry_Subtitles_Name {}
+entry#entry_Subtitles_Types {}
+label#label_Audio_Languages {}
+label#label_Audio_Name {}
+label#label_Audio_Types {}
+label#label_Audio {}
+label#label_Subtitles_Languages {}
+label#label_Subtitles_Name {}
+label#label_Subtitles_Types {}
+label#label_Subtitles {}
+label#label_Title_Keep {}
+label#label_IDs_Audio {}
+label#label_IDs_Subtitles {}
+entry#entry_IDs_Audio {}
+entry#entry_IDs_Subtitles {}
+window#main_Window {}
+treeview#treeview_Data_Grid {}
+scrolledwindow#scrollwindow_Data_Grid {}
+filechooserbutton#filechooser_Folder_Selecter {}
