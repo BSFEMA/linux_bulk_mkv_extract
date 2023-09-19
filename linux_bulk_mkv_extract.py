@@ -304,7 +304,7 @@ class Main():
         about = gtk.AboutDialog()
         about.connect("key-press-event", self.about_dialog_key_press)  # Easter Egg:  Check to see if Konami code has been entered
         about.set_program_name("Linux Bulk MKV Extract")
-        about.set_version("Version 1.0")
+        about.set_version("Version 1.1")
         about.set_copyright("Copyright (c) BSFEMA")
         about.set_comments("Python application using Gtk and Glade for bulk extracting MKV data in Linux")
         about.set_license_type(gtk.License(7))  # License = MIT_X11
@@ -610,6 +610,7 @@ def parse_json_data():
         audio = ""
         for track in files_Full[i][9]:
             name = str(files_Full[i][9][track]["track_name"])
+            name = name.replace("&", "&amp;")
             if name == "":
                 if len(audio) > 0:
                     if str(track) in files_Full[i][11]:
@@ -636,6 +637,7 @@ def parse_json_data():
         subtitles = ""
         for track in files_Full[i][10]:
             name = str(files_Full[i][10][track]["track_name"])
+            name = name.replace("&", "&amp;")
             if name == "":
                 if len(subtitles) > 0:
                     if str(track) in files_Full[i][11]:
